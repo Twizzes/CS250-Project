@@ -31,6 +31,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Course.cpp" />
+		<Unit filename="Course.h" />
+		<Unit filename="InputHandler.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="Person.cpp" />
+		<Unit filename="Person.h" />
+		<Unit filename="Student.cpp" />
+		<Unit filename="Student.h" />
+		<Unit filename="StudentList.cpp" />
+		<Unit filename="StudentList.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
