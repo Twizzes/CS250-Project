@@ -50,51 +50,52 @@ void processChoice(const StudentList& studentList, double tuitionRate)
 	string courseNumber, lastName;
 
 	cout << "\nEnter your choice: ";
-	cin >> choice; 
+	cin >> choice;
 	cout << endl;
 
-	cout << fixed << showpoint << setprecision(2); 
+	cout << fixed << showpoint << setprecision(2);
 
 	while (choice != 6)
 	{
 		string fName, lName;
-		int ssn = 0;
-		double donation = 0.0;
+/*      I've commented these next two lines out because they create unused variable errors... */
+//		int ssn = 0;
+//		double donation = 0.0;
 
 		switch(choice)
 		{
-			
+
 			// Print all students
-		case 1: 
+		case 1:
 			studentList.printAllStudents(tuitionRate);
 
 			break;
 
 			// Print student information
-		case 2: 
-			cout << "Please enter student's ID: ";			
+		case 2:
+			cout << "Please enter student's ID: ";
 			cin >> id;
 			cout << endl;
-			
+
 			studentList.printStudentByID(id, tuitionRate);
 			cout << endl;
 
 			break;
 
 			// Search student by last name
-		case 3: 
-			cout << "Please enter the student's last name: ";			
+		case 3:
+			cout << "Please enter the student's last name: ";
 			cin >> lastName;
 			cout << endl;
 
 			studentList.printStudentsByName(lastName);
-			cout << endl; 
-				
+			cout << endl;
+
 			break;
 
-			// Print students by course 
+			// Print students by course
 		case 4:
-			cout << "Please enter the course number: ";			
+			cout << "Please enter the course number: ";
 			cin >> courseNumber;
 			cout << endl;
 
@@ -102,16 +103,16 @@ void processChoice(const StudentList& studentList, double tuitionRate)
 			cout << endl;
 
 			break;
-						
+
 			// Print students on hold
-		case 5: 
+		case 5:
 			studentList.printStudentsOnHold(tuitionRate);
 			cout << endl;
 
 			break;
 
 			// Incorrect selection
-		default: 
+		default:
 			cout << "\nSorry. That is not a selection." << endl;
 
 			break;
