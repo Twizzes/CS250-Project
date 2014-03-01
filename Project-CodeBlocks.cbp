@@ -30,18 +30,8 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-D#CODEBLOCKS" />
 		</Compiler>
-		<Unit filename="../../cs250/Week 5/Day 2/project_1e_print_to_file_files/OutputHandler.h" />
-		<Unit filename="Course.cpp" />
-		<Unit filename="Course.h" />
-		<Unit filename="InputHandler.h" />
-		<Unit filename="Main.cpp" />
-		<Unit filename="Person.cpp" />
-		<Unit filename="Person.h" />
-		<Unit filename="Student.cpp" />
-		<Unit filename="Student.h" />
-		<Unit filename="StudentList.cpp" />
-		<Unit filename="StudentList.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

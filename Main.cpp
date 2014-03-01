@@ -58,7 +58,7 @@ void processChoice(const StudentList& studentList, double tuitionRate)
 	while (choice != 6)
 	{
 		string fName, lName;
-/*      I've commented these next two lines out because they create unused variable errors... */
+/*      I've commented these next two lines out because they create unused variable warnings... */
 //		int ssn = 0;
 //		double donation = 0.0;
 
